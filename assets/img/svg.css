@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=JetBrains+Mono:wght@200;300&display=swap');
+
+svg:hover .animationRight{
+  animation-duration: 1.2s;
+  animation-name: animateAvatarR;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+svg:hover .animationLeft{
+    animation-duration: 1.2s;
+    animation-name: animateAvatarL;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+
+.st0{fill:#C04DF7;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Andika New Basic', sans-serif;}
+	.st3{font-size:34px;}
+	.st4{fill:#D951E0;}
+	.st5{fill:#F74DB2;}
+	.st6{font-size:31.5921px;}
+	.st7{fill:#8C4AED;}
+	.st8{font-size:34.2193px;}
+	.st9{font-size:33.6792px;}
+	.st10{font-size:32.955px;}
+	.st11{fill:#FF7BAC;}
+	.st12{fill:#BDCCD4;}
+	.st13{fill:#D36692;}
+	.st14{fill:#7947C9;}
+	.st15{fill:#5E389B;}
+
+@keyframes animateAvatarR{
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(350px);
+    }
+}
+
+@keyframes animateAvatarL{
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-200px);
+    }
+}
