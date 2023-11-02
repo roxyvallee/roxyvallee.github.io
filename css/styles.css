@@ -9990,10 +9990,10 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
@@ -10075,7 +10075,7 @@ h3 {
 
 .text-title{
   color:#F74DB2;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 #mainNav {
