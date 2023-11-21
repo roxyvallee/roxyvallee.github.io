@@ -488,7 +488,10 @@ mark,
   color:#8C4AED;
 }
 
-
+.video-fluid {
+  max-width: 50%;
+  max-height: 50%;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -10229,8 +10232,8 @@ h3 {
   z-index: 1;
   right: 1.5rem;
   top: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   color: #8C4AED;
   opacity: 1;
 }
