@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
-
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,14 +11,13 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
+//import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 import SplineImage from "../assets/spline/homepage.spline"
 import Spline from '@splinetool/react-spline';
 
 import INFO from "../data/user";
-import SEO from "../data/seo";
 
 import "./styles/homepage.css";
 
@@ -57,8 +54,6 @@ const Homepage = () => {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [logoSize, oldLogoSize]);
 
-	const currentSEO = SEO.find((item) => item.page === "home");
-
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
@@ -71,32 +66,28 @@ const Homepage = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{INFO.main.title}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
-			</Helmet>
-
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
-						<div style={logoStyle}>
+						{/*<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
+						*/}
 					</div>
+					
 
 					<div className="homepage-container">
-					<div className="name homepage-name">
-									{INFO.main.name}
+						<div className="homepage-name" style = {{display: 'flex', alignItems: 'end', gap: '20px'}}>
+							<Logo width={logoSize} link={false} />
+							<div className="name">
+								{INFO.homepage.title}
+							</div>
 						</div>
 						<div className="homepage-first-area">			
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									{INFO.main.name}
 								</div>
 
 								<div className="subtitle homepage-subtitle">

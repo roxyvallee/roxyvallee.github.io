@@ -113,10 +113,13 @@
 		order: 2;
 	}
 
-	.homepage-name {
+	.homepage-name{
 		width: 100% !important;
 		margin-top: 20px;
 		order: 2;
+		display: flex!important;
+    	align-items: end;
+    	gap: 20px;
 	}
 
 	.homepage-title {

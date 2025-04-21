@@ -22,6 +22,24 @@
 	padding-top: 120px;
 }
 
+.projects-subtitle {
+	width: 100%;
+	padding-top: 10px;
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.projects-title
+{
+	color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 45px;
+    font-weight: 700;
+    width: 100%;
+}
+
 @media (max-width: 600px) {
 	.projects-container {
 		padding-top: 60px;

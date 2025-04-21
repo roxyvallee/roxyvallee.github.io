@@ -1,10 +1,12 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faSchool } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 import LSP from "../../assets/logos/LSP.jpeg"
 import Apperture from "../../assets/logos/apperture.jpeg"
 import FlatPixel from "../../assets/logos/FPlogo.png"
+import IMAC from "../../assets/logos/IMAC_logo_large.png"
+import EFREI from "../../assets/logos/1549868729phpjAAieb.png"
 
 import "./styles/works.css";
 import App from "../../App";
@@ -93,7 +95,46 @@ const Works = () => {
 					</div>
 				}
 			/>
+			<div style={{ height: '30px' }} />
+			<Card
+				icon={faSchool}
+				title="Education"
+				body={
+					<div className="works-body">
+						<div className="work">
+							<img
+								src={IMAC}
+								alt="imac"
+								className="work-image"
+							/>
+							<div className="work-title">Master’s Degree in Engineering</div>
+							<div className="work-subtitle">
+							IMAC – Engineering Program in Multimedia and Information Technology
+							</div>
+							<div className="work-duration">September 2018 - September 2021</div>
+							<div className="work-description"></div>
+							
+						</div>
+
+						<div className="work">
+							<img
+								src={EFREI}
+								alt="efrei"
+								className="work-image"
+							/>
+							<div className="work-title">Bachelor’s Degree of Science majoring in Computer Science</div>
+							<div className="work-subtitle">
+								Efrei - Engineering school of digital technologies
+							</div>
+							<div className="work-duration">September 2015 - September 2018</div>
+						</div>
+						<div className="work-description">
+						</div>
+					</div>
+				}
+			/>
 		</div>
+		
 	);
 };
 

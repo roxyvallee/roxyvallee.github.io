@@ -1,18 +1,25 @@
 .all-projects-container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
+	justify-content: space-between;
+	gap: 20px;
+	border-radius: 20px;
+	overflow: hidden; /* Prevents background from overflowing */
 }
 
 .all-projects-project {
-	width: calc(100% / 3);
+	width: calc(50% - 10px); /* Two projects per row */
 	box-sizing: border-box;
 	padding: 10px;
-	overflow: hidden;
+	border-radius: 20px;
+	position: relative; /* To ensure hover effect works properly */
+	overflow: hidden; /* Ensures the image doesn't spill outside the div */
+	height: 300px; /* You can adjust the height as needed */
+}
+
+.all-projects-project:hover {
+	transform: scale(1.05); /* Slight zoom effect */
+	z-index: 1; /* Ensures the hover effect doesn't affect the background */
 }
 
 @media (max-width: 600px) {

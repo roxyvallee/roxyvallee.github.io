@@ -3,16 +3,29 @@
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
+	opacity: 1;
 	height: 100%;
+	background: #fafafa;
+  	transition: opacity 0.3s ease-in-out;
 }
+
+.project-overlay {
+	position: absolute; /* Positioned over the background */
+	width: 100%; /* The size of the square */
+	height: 100%; /* The size of the square */
+	background-color: rgba(255, 255, 255, 0.5); /* Initial opacity */
+  }
+
+  .project:hover .project-container {
+	background-color: rgba(255, 255, 255, 0); /* Initial opacity */
+  }
 
 .project a {
 	text-decoration: none;
 }
 
 .project:hover {
-	background: #fafafa;
+	background: #000000;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -23,7 +36,13 @@
 }
 
 .project-container {
-	padding: 30px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 100%; 
+	display: flex; /* Activate Flexbox */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .project-logo {
@@ -41,10 +60,23 @@
 	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
+	transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .project-description {
 	color: var(--secondary-color);
+	text-align: center;
+	transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project:hover .project-description{
+	color:rgb(255, 255, 255);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.project:hover .project-title{
+	color:rgb(255, 255, 255);
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .project-link {

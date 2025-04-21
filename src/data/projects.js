@@ -1,13 +1,23 @@
 import React from "react";
-import WhereIsMySuit from "../assets/projects/WhereIsMySuit.png"
+import WhereIsMySuit from "../assets/projects/WhereIsMySuit2.png"
+import WhereIsMySuitBackground from "../assets/projects/backgrounds/background_whereIsMySuit.jpg"
+import WhereIsMySuitDemo from "../assets/projects/whereismysuit_demo.gif"
 import Game from "../assets/icons/joystick.png"
 import Yahaha from "../assets/logos/Yahaha.png"
+import YahahaInstagram from "../assets/projects/yahaha_instagram.png"
+import YahahaBackground from "../assets/projects/backgrounds/background_yahaha.png"
 import GMTK from "../assets/projects/BehindTheHexagon.gif"
+import GMTKBackground from "../assets/projects/backgrounds/background_gmtk.png"
 import Esperide from "../assets/projects/Esperide.jpg"
+import EsperideGIF from "../assets/projects/Esperide.gif"
+import EsperideTool from "../assets/projects/esperideEditor.png"
 import SnapChat from "../assets/icons/snapchat.png"
 import Filter from "../assets/projects/snapchat-filter.gif"
+import FilterBackground from "../assets/projects/backgrounds/background_filters.png"
 import Plant from "../assets/icons/plant.png"
 import DoNotTouch from "../assets/projects/FACE_GAMES.gif"
+import DoNotTouchBackground from "../assets/projects/backgrounds/donottouch.png"
+import InstagramEmbed  from "../components/common/instagramEmbed";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -21,7 +31,7 @@ import {
 	faAppStore,
 } from "@fortawesome/free-brands-svg-icons";
 
-function project_1() {
+function project_6() {
 	return {
 		date: "2024",
 		title: "Co-Founder of the YAHAHA Media Platform",
@@ -34,8 +44,13 @@ function project_1() {
 			}
 
 			.randImage {
-				align-self: center;
-				width: 20%;
+				width: 100%; /* Adjust width */
+				height: auto; /* Ensures aspect ratio is maintained */
+				
+				/* Cropping Effect */
+			
+				object-fit: cover; /* Ensures the image fills the space without distortion */
+				border-radius: 10px; /* Optional: Adds rounded corners */
 			}
 
 			.paragraph {
@@ -49,6 +64,7 @@ function project_1() {
 			}
 			`,
         logo: Yahaha,
+		background: YahahaBackground,
         keywords: [
 			"Yahaha",
 		],
@@ -56,7 +72,7 @@ function project_1() {
 			<React.Fragment>
 				<div className="article-content">
 					<img
-						src= {Yahaha}
+						src= {YahahaInstagram}
 						alt="random"
 						className="randImage"
 					/>
@@ -64,10 +80,12 @@ function project_1() {
 						<h3>What is YAHAHA ?</h3> 
 						YAHAHA is a media initiative raising awareness about ecology through video games. This project highlights the environmental impact of the video game industry and explores the potential connections between gaming and sustainability.
 					</div>
+					<InstagramEmbed url="https://www.instagram.com/p/DCw8pO3OLUS/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" />
 					<div className="paragraph">
 						<h3>Who is YAHAHA ?</h3> 
 						YAHAHA is a collaboration between me, a video game programmer, and a journalist specializing in environmental issues. Together, we aim to merge two topics we are passionate about and use social media to spark meaningful conversations.
 					</div>
+					<InstagramEmbed url="https://www.instagram.com/p/DDXbU16IqP1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" />
 					<div className="paragraph">
 						<h3>What do we do ?</h3> 
 						We explore environmental topics by reviewing video games through videos and posts, investigating the environmental footprint of the video game industry. Additionally, we conduct interviews and collaborate with other media outlets to further discuss and raise awareness about these critical issues.
@@ -107,13 +125,14 @@ function project_1() {
 	};
 }
 
-function project_2() {
+function project_3() {
 	return {
 		date: "January 2024",
 		title: "Global Game Jam 2024",
 		description:
 			"I developed a 3D game on Unreal Engine 5 for the Global Game Jam 2024.",
         logo: Game,
+		background: WhereIsMySuitBackground,
         keywords: [
 			"Global Game Jam 2024",
 			"Where is my suit",
@@ -122,12 +141,19 @@ function project_2() {
 				.article-content {
 					display: flex;
 					flex-direction: column;
-				}
-
-				.randImage {
 					align-self: center;
 				}
 
+				.randImage {
+    				width: 100%; /* Adjust width */
+					height: auto; /* Ensures aspect ratio is maintained */
+					
+					/* Cropping Effect */
+					aspect-ratio: 16 / 9; /* Makes it a rectangle (adjust as needed) */
+					object-fit: cover; /* Ensures the image fills the space without distortion */
+					border-radius: 10px; /* Optional: Adds rounded corners */
+				}
+					
 				.paragraph {
 					padding-top : 30px;
 					align-items: right;
@@ -162,10 +188,17 @@ function project_2() {
 						<li>Organized and distributed tasks effectively within the team</li>
 						<li>Ensured the project was completed within the allocated timeframe</li>
 						</ul>
-
+					</div>
+					<img
+						src= {WhereIsMySuitDemo}
+						alt="random"
+						className="randImage"
+					/>
+					<div className="paragraph">
 						<h3>About the gameplay</h3>
 						The player controls a 3D character who wakes up the morning after a wild office party, finding themselves almost completely naked. The game's objective is to prepare for a very important meeting with the company's CEO by acquiring a complete set of clothes. The game takes place over five levels, each representing different areas of the office environment, such as the basement, reception, and more. If the player is detected, they risk being ridiculed and must quit out of shame, so they must stealthily navigate these areas, avoiding detection while creatively acquiring pieces of clothing. To pass by undetected, the player has a number of tools at their disposal to distract their co-workers and make one of them the laughing stock!
 					</div>
+				
 					<div className="paragraph" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} >
 						if you are interested more about this project, you can check this links</div>	
 
@@ -186,7 +219,7 @@ function project_2() {
 	};
 }
 
-function project_3() {
+function project_4() {
 	return {
 		date: "July 2023",
 		title: "GMTK Game Jam 2023",
@@ -200,6 +233,18 @@ function project_3() {
 
 		.randImage {
 			align-self: center;
+			padding-top: 30px;
+			height: 500px;
+		}
+
+		.randImageIntroduction {
+				width: 100%; /* Adjust width */
+				height: auto; /* Ensures aspect ratio is maintained */
+				
+				/* Cropping Effect */
+				aspect-ratio: 16 / 9; /* Makes it a rectangle (adjust as needed) */
+				object-fit: cover; /* Ensures the image fills the space without distortion */
+				border-radius: 10px; /* Optional: Adds rounded corners */
 		}
 
 		.paragraph {
@@ -213,6 +258,7 @@ function project_3() {
 		}
 		`,
         logo: Game,
+		background: GMTKBackground,
         keywords: [
 			"GMTK 2023",
 		],
@@ -220,9 +266,9 @@ function project_3() {
 			<React.Fragment>
 				<div className="article-content">
 					<img
-						src= {GMTK}
+						src= {GMTKBackground}
 						alt="random"
-						className="randImage"
+						className="randImageIntroduction"
 					/>
 					<div className="paragraph">
 					<h3>What is a game jam ?</h3>
@@ -231,6 +277,13 @@ function project_3() {
 					<h3>Jam Theme</h3>
 						Roles Reversed
 					</div>
+
+					<img
+						src= {GMTK}
+						alt="random"
+						className="randImage"
+					/>
+
 					<div className="paragraph">
 						In a team of two, we developed a 3D game in Unity using C#. The game is playable online on <a href={"https://chsxf.itch.io/behind-the-hexagon"}>itch.io</a>. 
 						I primarily worked as a programmer but also contributed to game design and graphics.
@@ -276,12 +329,12 @@ function project_3() {
 	};
 }
 
-function project_4() {
+function project_1() {
 	return {
 		date: "2023",
 		title: "Esperide et la forêt de demain",
 		description:
-			"I contributed to the development of Esperide et la Forêt de Demain, a serious game about climate change, created by ONF with the support of the Nouvelle-Aquitaine Region, and developed collaboratively by Apperture (France) and Les Studios Persistant (Canada).",
+			"I contributed to the development of 'Esperide et la Forêt de Demain', created by ONF.",
 		style: `
 		.article-content {
 			display: flex;
@@ -301,8 +354,20 @@ function project_4() {
 			align-self: center;
 			padding-top : 30px;
 		}
+		
+		.image-container {
+		display: flex;
+		justify-content: center; /* or space-between / space-around if you want spacing */
+		gap: 20px; /* space between the images */
+		}
+
+		.image-container img {
+		width: 100%; /* adjust as needed */
+		height: auto;
+		}
 		`,
         logo: Plant,
+		background: Esperide,
         keywords: [
 			"Esperide",
 		],
@@ -321,15 +386,30 @@ function project_4() {
 						<br/>
 						As a programmer for Les Studios Persistant, I contributed to the Unity and C# development. The game is available <a href={"https://esperide-et-la-foret-de-demain.fr/"}>online</a> and on both Android and iOS devices.
 					</div>
+
 					<div className="paragraph">
-						<h3>My Contributions:</h3>
+						<h3>Card Editor Tool:</h3>
+						<p>Developed a 2D game editor tool to assist game designers in creating and managing cards. I used Unity UI Toolkit to create the window in editor.</p>				
+					</div>
+
+					<div class="image-container">
+						<img src={EsperideTool} alt="Image 1" />
+					</div>
+
+					<div className="paragraph">
+						<h3>UI Interface:</h3>
 						<ul>
-						<li>Developed a 2D game editor tool to assist game designers in creating and managing cards.</li>
-						<li>Designed and implemented the UI, including menus and asset integration</li>
-						<li>Integration of the cards UI and their behaviors into gameplay</li>
-						<li>Integrated AI navigation for NPCs behaviors</li>
+							<li>Implemented the UI, including menus and asset integration</li>
+							<li>Integration of the cards UI and their behaviors into gameplay</li>
+							<li>Integrated AI navigation for NPCs behaviors</li>
 						</ul>
 					</div>
+
+					<img
+						src= {EsperideGIF}
+						alt="random"
+						className="randImage"
+					/>
 
 					<div className="paragraph" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} >
 						if you are interested more about this project, you can check this links</div>	
@@ -386,6 +466,7 @@ function project_5() {
 			}
 			`,
         logo: SnapChat,
+		background: FilterBackground,
         keywords: [
 			"Filter AR",
 		],
@@ -421,7 +502,7 @@ function project_5() {
 	};
 }
 
-function project_6() {
+function project_2() {
 	return {
 		date: "2021",
 		title: "DO NOT TOUCH",
@@ -438,6 +519,16 @@ function project_6() {
 				padding-top: 30px;
 				height: 500px;
 			}
+
+			.randImageIntroduction {
+    				width: 100%; /* Adjust width */
+					height: auto; /* Ensures aspect ratio is maintained */
+					
+					/* Cropping Effect */
+					aspect-ratio: 16 / 9; /* Makes it a rectangle (adjust as needed) */
+					object-fit: cover; /* Ensures the image fills the space without distortion */
+					border-radius: 10px; /* Optional: Adds rounded corners */
+			}
 	
 			.paragraph {
 				padding-top : 30px;
@@ -450,13 +541,18 @@ function project_6() {
 			}
 			`,
         logo: Game,
+		background: DoNotTouchBackground,
         keywords: [
 			"Do Not Touch",
 		],
 		body: (
 			<React.Fragment>
 			<div className="article-content">
-					
+					<img
+						src= {DoNotTouchBackground}
+						alt="random"
+						className="randImageIntroduction"
+					/>
 					<div className="paragraph">
 						<h3>About the Project</h3>
 						DO NOT TOUCH is an augmented reality applications available on <b><a href={"https://play.google.com/store/apps/details?id=com.flatpixelsociety.dnt&hl=en-US&pli=1"}>Google Play</a></b> and <b><a href={"https://play.google.com/store/apps/https://apps.apple.com/us/app/do-not-touch-by-nickelodeon/id1355139969?id=com.flatpixelsociety.dnt&hl=en-US&pli=1"}>App Store</a></b>. 
