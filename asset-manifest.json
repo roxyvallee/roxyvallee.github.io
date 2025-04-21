@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.72c1a0e4.css",
-    "main.js": "/static/js/main.17261dd9.js",
+    "main.css": "/static/css/main.204943a6.css",
+    "main.js": "/static/js/main.4eefa50c.js",
     "static/js/872.234addf2.chunk.js": "/static/js/872.234addf2.chunk.js",
     "static/js/227.7f5966f0.chunk.js": "/static/js/227.7f5966f0.chunk.js",
     "static/js/526.a083b274.chunk.js": "/static/js/526.a083b274.chunk.js",
@@ -11,21 +11,31 @@
     "static/js/357.0498c258.chunk.js": "/static/js/357.0498c258.chunk.js",
     "static/js/753.c2ef3863.chunk.js": "/static/js/753.c2ef3863.chunk.js",
     "static/js/787.512dd3f2.chunk.js": "/static/js/787.512dd3f2.chunk.js",
+    "static/media/whereismysuit_demo.gif": "/static/media/whereismysuit_demo.c0f72d12571cbf820ef6.gif",
     "static/media/FACE_GAMES.gif": "/static/media/FACE_GAMES.e1ef94bc3141607b97ef.gif",
     "static/media/snapchat-filter.gif": "/static/media/snapchat-filter.fb16cc2f4806ea77028f.gif",
+    "static/media/Esperide.gif": "/static/media/Esperide.46bdb111e81095309bf4.gif",
+    "static/media/esperideEditor.png": "/static/media/esperideEditor.b57e476f0ec66dfe9ecc.png",
     "static/media/BehindTheHexagon.gif": "/static/media/BehindTheHexagon.e5da9b684e760fed6c2f.gif",
-    "static/media/WhereIsMySuit.png": "/static/media/WhereIsMySuit.b2eed5806cfbbe2f21bc.png",
+    "static/media/WhereIsMySuit2.png": "/static/media/WhereIsMySuit2.b77d4a1a7e7cf049f00b.png",
+    "static/media/background_filters.png": "/static/media/background_filters.633d9067258e921bd5aa.png",
+    "static/media/background_yahaha.png": "/static/media/background_yahaha.0de42ba46acaaba5aad5.png",
+    "static/media/donottouch.png": "/static/media/donottouch.e6a1092c00f79fe13a6f.png",
     "static/media/homepage.spline": "/static/media/homepage.5d586a0007a3e7a5104e.spline",
+    "static/media/background_gmtk.png": "/static/media/background_gmtk.9a44f3f9856ddd668eef.png",
     "static/media/FPlogo.png": "/static/media/FPlogo.98fa14bc8db7770b78c1.png",
+    "static/media/IMAC_logo_large.png": "/static/media/IMAC_logo_large.2b4e59bc807884dccc08.png",
     "static/media/Yahaha.png": "/static/media/Yahaha.2f1acb85a3287a51e780.png",
     "static/media/Esperide.jpg": "/static/media/Esperide.66df60935f1eb6052a66.jpg",
+    "static/media/yahaha_instagram.png": "/static/media/yahaha_instagram.bdd80bb6b5cff42ad843.png",
     "static/media/back-button.png": "/static/media/back-button.d19b46127c03f302fed2.png",
     "static/media/snapchat.png": "/static/media/snapchat.b84f14c41496fc78f8a4.png",
+    "static/media/background_whereIsMySuit.jpg": "/static/media/background_whereIsMySuit.0a231b8ba03f02af49bb.jpg",
     "static/media/plant.png": "/static/media/plant.77cb52be0d0b1ef6edc0.png",
     "static/media/joystick.png": "/static/media/joystick.201c3cd5a18f3c804259.png",
     "index.html": "/index.html",
-    "main.72c1a0e4.css.map": "/static/css/main.72c1a0e4.css.map",
-    "main.17261dd9.js.map": "/static/js/main.17261dd9.js.map",
+    "main.204943a6.css.map": "/static/css/main.204943a6.css.map",
+    "main.4eefa50c.js.map": "/static/js/main.4eefa50c.js.map",
     "872.234addf2.chunk.js.map": "/static/js/872.234addf2.chunk.js.map",
     "227.7f5966f0.chunk.js.map": "/static/js/227.7f5966f0.chunk.js.map",
     "526.a083b274.chunk.js.map": "/static/js/526.a083b274.chunk.js.map",
@@ -37,7 +47,7 @@
     "787.512dd3f2.chunk.js.map": "/static/js/787.512dd3f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72c1a0e4.css",
-    "static/js/main.17261dd9.js"
+    "static/css/main.204943a6.css",
+    "static/js/main.4eefa50c.js"
   ]
 }
