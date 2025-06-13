@@ -16,10 +16,6 @@
 	background-color: rgba(255, 255, 255, 0.5); /* Initial opacity */
   }
 
-  .project:hover .project-container {
-	background-color: rgba(255, 255, 255, 0); /* Initial opacity */
-  }
-
 .project a {
 	text-decoration: none;
 }
@@ -37,12 +33,16 @@
 
 .project-container {
 	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.8);
+	background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9) 40%);
 	height: 100%; 
 	display: flex; /* Activate Flexbox */
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
+}
+
+.project:hover .project-container {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 45%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0) 85%);
 }
 
 .project-logo {
@@ -71,12 +71,12 @@
 
 .project:hover .project-description{
 	color:rgb(255, 255, 255);
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 1px 3px black, 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .project:hover .project-title{
 	color:rgb(255, 255, 255);
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 1px 3px black, 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-link {
