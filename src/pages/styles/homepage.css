@@ -24,7 +24,8 @@
 }
 
 .homepage-title {
-	width: 85% !important;
+	display: block;
+	width: 100% !important;
 }
 
 .homepage-subtitle {
@@ -100,6 +101,20 @@
 	padding-top: 30px;
 }
 
+.homepage-name > .logo {
+	float: left;
+}
+
+.homepage-name .name, .homepage-name .title {
+	margin-left: 100px;
+}
+
+@media (min-width: 1024px) {
+	.homepage-first-area {
+		height: 220px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
@@ -117,7 +132,6 @@
 		width: 100% !important;
 		margin-top: 20px;
 		order: 2;
-		display: flex!important;
     	align-items: end;
     	gap: 20px;
 	}
