@@ -34,9 +34,9 @@ import {
 function project_6() {
 	return {
 		date: "2024",
-		title: "Co-Founder of the YAHAHA Media Platform",
+		title: "YAHAHA Media Platform",
 		description:
-			"I co-founded YAHAHA, a platform dedicated to raising awareness about ecology through video games.",
+			"Co-founded YAHAHA, a platform dedicated to raising awareness about ecology through video games",
 		style:  `
 			.article-content {
 				display: flex;
@@ -130,7 +130,7 @@ function project_3() {
 		date: "January 2024",
 		title: "Global Game Jam 2024",
 		description:
-			"I developed a 3D game on Unreal Engine 5 for the Global Game Jam 2024.",
+			"A 3D game on Unreal Engine 5",
         logo: Game,
 		background: WhereIsMySuitBackground,
         keywords: [
@@ -224,7 +224,7 @@ function project_4() {
 		date: "July 2023",
 		title: "GMTK Game Jam 2023",
 		description:
-			"I developed a 3D game on Unity for the GMTK Game Jam 2023.",
+			"A 3D game on Unity",
 		style: `
 		.article-content {
 			display: flex;
@@ -334,7 +334,7 @@ function project_1() {
 		date: "2023",
 		title: "Esperide et la forêt de demain",
 		description:
-			"I contributed to the development of 'Esperide et la Forêt de Demain', created by ONF.",
+			"Contributions to the development of 'Esperide et la Forêt de Demain', created by ONF",
 		style: `
 		.article-content {
 			display: flex;
@@ -443,7 +443,7 @@ function project_5() {
 		date: "2021",
 		title: "Augmented Reality Filter Development",
 		description:
-			"I developed augmented reality filters for SnapChat using LensStudio.",
+			"Augmented reality filters for SnapChat using LensStudio",
 			style: `
 			.article-content {
 				display: flex;
@@ -507,7 +507,7 @@ function project_2() {
 		date: "2021",
 		title: "DO NOT TOUCH",
 		description:
-			"I developed augmented reality filters for the DO NOT TOUCH app, designed by Nickelodeon and developed by Flat Pixel.",
+			"Augmented reality filters for the DO NOT TOUCH app, designed by Nickelodeon and developed by Flat Pixel",
 			style: `
 			.article-content {
 				display: flex;
